@@ -8,3 +8,17 @@ This code wraps Koh's original C implementation from http://www.stanford.edu/~bo
 For an interesting demo of L1 trend filtering see: https://github.com/avibryant/l1tf
 
 L1TF is similar in purpose to http://en.wikipedia.org/wiki/Hodrick%E2%80%93Prescott_filter
+
+## Build
+```
+ocaml setup.ml -configure
+ocaml setup.ml -build
+ocaml setup.ml -install
+```
+
+## Usage
+```bash
+$ ./l1tf_file.native snp500.txt 10
+```
+
+
