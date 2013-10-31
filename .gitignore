@@ -1,0 +1,7 @@
+setup.data
+setup.log
+_build/
+*.o
+*.cm*
+*.native
+*.pyc

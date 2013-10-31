@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 0a638f4b15aef6efcd769446eba824a7)
+version = "0.1"
+description = "l1_tf"
+archive(byte) = "ol1tf.cma"
+archive(byte, plugin) = "ol1tf.cma"
+archive(native) = "ol1tf.cmxa"
+archive(native, plugin) = "ol1tf.cmxs"
+exists_if = "ol1tf.cma"
+# OASIS_STOP
+

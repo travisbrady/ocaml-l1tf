@@ -1,0 +1,26 @@
+OASISFormat: 0.3
+Name:        l1_tf
+Version:     0.1
+Synopsis:    l1_tf
+Authors:     Travis Brady
+License:     MIT
+Plugins:     META (0.3)
+
+Library ol1tf
+  Path:             lib
+  FindlibName:      ol1tf
+  BuildTools:       ocamlbuild
+  CSources:         blas.h ,l1tf.c, l1tf.h, lapack.h, ol1tf_stubs.c
+  CCLib:            -lblas -llapack -lm
+  CCOpt:            -O3
+  CompiledObject:   best
+  Modules:          Ol1tf
+
+Executable l1tf_file
+  Path:             lib_test
+  BuildTools:       ocamlbuild
+  BuildDepends:     bigarray,ol1tf
+  CompiledObject:   native
+  MainIs:           l1tf_file.ml
+  Install:          false
+
